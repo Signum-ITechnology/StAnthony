@@ -994,7 +994,7 @@ public class PendingFees extends AppCompatActivity {
                     otherfees.add(feetype);
                 }
 
-//                Log.e("list",otherfeeslist.get(0)+" "+otherfeeslist.get(1)+" "+otherfeeslist.get(2)+" "+otherfeeslist.get(3));
+
                 try {
                     getmisfee=otherfees.get(0);
                     getptafee=otherfees.get(1);
