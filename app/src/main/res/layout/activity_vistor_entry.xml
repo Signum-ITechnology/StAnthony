@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VistorEntry">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <EditText
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/shapeemail1"
+                    android:textAlignment="center"
+                    android:drawablePadding="10dp"
+                    android:hint="Date"
+                    android:id="@+id/text8"
+                    android:focusable="false"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textColorHighlight="@android:color/black"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:id="@+id/text9"
+                    android:textAlignment="center"
+                    android:background="@drawable/shapeemail1"
+                    android:drawablePadding="10dp"
+                    android:hint="In Time"
+                    android:focusable="false"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textColorHighlight="@android:color/black"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:id="@+id/text1"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Name"
+                android:focusable="false"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:id="@+id/text2"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Contact Number"
+                android:maxLength="10"
+                android:inputType="number"
+                android:focusable="false"
+                android:digits="0123456789"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:id="@+id/text3"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="From Where"
+                android:focusable="false"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:id="@+id/text4"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="To Whom Meet"
+                android:focusable="false"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:id="@+id/text5"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Regarding"
+                android:focusable="false"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:id="@+id/text6"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Card Number"
+                android:inputType="number"
+                android:focusable="false"
+                android:digits="0123456789"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:id="@+id/text7"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Remark"
+                android:focusable="false"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Visitor"
+                android:shadowColor="@android:color/transparent"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:id="@+id/login"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shapelogin1"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

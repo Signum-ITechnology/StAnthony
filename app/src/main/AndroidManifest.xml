@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.school.stanthony">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        tools:ignore="ManifestOrder" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:roundIcon,android:icon">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+
+<!--        <service-->
+<!--            android:name=".MyFirebaseMessagingService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+        <activity
+            android:name="com.school.stanthony.Check"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.school.stanthony.MainPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.LoginPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.HomePage"
+            android:label="@string/title_activity_home_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.school.stanthony.FeedBackForm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.Website"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeamDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.Holidays"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.StudentProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.CircularPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentAttendence"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.FeesDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.MyMessagePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PtaMeeting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.BudDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.HomeWork"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ExamTimeTbl"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.ClassTimeTable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PrincipalMessage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ExamResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.Notice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.NewsPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.AdmissionEnquiry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.Unit1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.YouTube"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.January"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.Semster1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.Unit2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.Semster2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.MondayTimeTable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.HomePage2"
+            android:label="@string/title_activity_home_page2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.school.stanthony.SelectLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherLoginPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherNotification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherAccouncement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherStudentAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TakeAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.WorkingDay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TakeAttendaceHoliday"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TakeAttendanceUnconditional"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherClassTimeTable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherMondayTimeTable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.RegisteredUsers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PlayVideo"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.TeacherUploadVideo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.Bus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PaidFeeDetails"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.FeesStructure"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.GenerateRecipt"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.AdditionalPaidFeeDetails"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.PendingFees"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.AdminLoginPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.HomePage3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ChequeRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ChequeRegisterStudent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ChequeRegisterYYY"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.StudentsPendingFeeReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentFeeReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentFeeReportYYY"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.AdmissionRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentListReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ExpenditureRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ExpenditureRegisterDetails"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.AttendancePendingRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.AttendancePendingRegisterReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.DailyCollection"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.DailyCollectionChoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.AdmissionStudentsRegister"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.PayMonthFee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PayBusFee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PaymentPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PaymentDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.NewPendingFeeReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.NewPendingFeeReportYYY"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.BirthdayRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.BirthdayRegisterReport"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.VideoList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.AttendancePendingRegisterYYY"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.StudentAnnouncement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.SingleStudentSummaryReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.AdminStudentNoticeEntry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.AdminTeacherNoticeEntry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.OtherLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.HomePage4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.OtherProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.OtherAccouncement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.OtherNotification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherNoticeEntry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherHomeworkEntry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentNoticeReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PrincipalLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.HomePage5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.GalleryName"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.Gallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ZoomImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.AssignmentPage"
+            android:label="@string/title_activity_assignment_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.school.stanthony.ViewAssignmentPdf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ChangeAttendence"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentNotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentNoticeReportt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StaffList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.VideoSubjectList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ExamTimeTableSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ExamTimeTableReport"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.StaffBirthdayRegister"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.StaffBirthdayRegisterReport"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.ShowPdf"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.HomeworkStatus"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.EditHomework"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.AssignmentStatusEntry"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.SelectAcadmic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentHoliday"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherStudentListReport"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.TeacherPendingFeeReport"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.school.stanthony.SelectAcadmicTeacher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.PrincipalStudentNoticeEntry"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.PrincipalTeacherNoticeEntry"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.PrincipalAdmissionRegister"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.PrincipalAdmissionStudentsRegister"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.school.stanthony.PrincipalStudentListReport"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.PrincipalStudentList"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.PrincipalStaffList"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.PrincipalStudentNoticeReport"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.SelectAcadmicPrincipal"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.TeacherHolidays"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.school.stanthony.McqMaster"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.McqQuestions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.McqSubjects"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.McqResultSubjects"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.McqViewResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentLiveLecture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.StudentAllLiveLectureDetails"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.NotesPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.NotesText"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.NotesShowPdf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.NotesVideoList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherAddNotes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherUpdateMarks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherAddMarks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherMarksEntry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherUpdateAllMarks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherLiveLecture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.AllLiveLectureDetails"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.LeaveManagement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.LeaveStatus2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.LeaveCancel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherAttendenceStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.TeacherAttendenceStatusDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.EnquiryEntry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.VistorEntry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.VistorList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PrincipalLeaveManagement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PrincipalLeaveStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.SuperviourLeaveManagement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.SuperviourLeaveStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PrincipalLiveLecture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PrincipalAllLiveLectureDetails"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.school.stanthony.StudentListDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PrincipalStudentListDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.PrincipalProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.school.stanthony.ZoomImageHw"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

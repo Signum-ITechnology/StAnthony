@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/stdattendance"
+        android:icon="@drawable/icon"
+        android:title="Student Attendance" />
+    <item
+        android:id="@+id/notice"
+        android:icon="@drawable/homework"
+        android:title="Notice" />
+    <item
+        android:id="@+id/homework"
+        android:icon="@drawable/notes"
+        android:title="Homework"
+        app:actionViewClass="android.widget.TextView"/>
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/homewrok"
+        android:title="Notes" />
+    <item
+        android:id="@+id/marks"
+        android:icon="@drawable/marksentry"
+        android:title="Marks Entry" />
+    <item
+        android:id="@+id/livelecture"
+        android:icon="@drawable/addparent"
+        android:title="Live Lecture"
+        app:actionViewClass="android.widget.TextView"/>
+    <item
+        android:id="@+id/leave"
+        android:icon="@drawable/addref"
+        android:title="Leave" />
+    <item
+        android:id="@+id/attendence"
+        android:icon="@drawable/icon"
+        android:title="My Attendence" />
+    <item
+        android:id="@+id/birthday"
+        android:icon="@drawable/calendar"
+        android:title="Student Birthday"
+        app:actionViewClass="android.widget.TextView"/>
+
+</menu>

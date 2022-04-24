@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GenerateRecipt">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/spinner1"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/spinner2"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/spinner3"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/spinner4"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/spinner5"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/spinner6"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/spinner7"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/spinner8"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@android:color/black">
+        <Button
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:text="Download recipt"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:id="@+id/button1"/>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@android:color/black">
+
+        <Button
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:text="open save recipts"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/_3sdp"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:id="@+id/button2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/scroll">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="WebViewLayout">
+
+            <WebView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/web"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

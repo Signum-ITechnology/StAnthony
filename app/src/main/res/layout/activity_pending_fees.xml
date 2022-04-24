@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PendingFees">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:id="@+id/text"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:text="Sr No"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="match_parent"
+                            android:text="Fee Type"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Balance"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="For Pay"
+                            android:visibility="visible"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="match_parent"
+                            android:text="Installment Fee"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/type1"
+                            android:textColor="@android:color/black"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/_5sdp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/balance1"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pay"
+                            android:visibility="visible"
+                            android:id="@+id/pay1"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="match_parent"
+                            android:text="2"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tution Fee"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/type2"
+                            android:textColor="@android:color/black"
+                           android:gravity="center|left"
+                            android:paddingLeft="@dimen/_5sdp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/balance2"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pay"
+                            android:visibility="visible"
+                            android:id="@+id/pay2"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="match_parent"
+                            android:text="Term 1 Fee"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/type3"
+                            android:textColor="@android:color/black"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/_5sdp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/balance3"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pay"
+                            android:visibility="visible"
+                            android:id="@+id/pay3"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="match_parent"
+                            android:text="Term 2 Fee"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/type4"
+                            android:textColor="@android:color/black"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/_5sdp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/balance4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pay"
+                            android:visibility="visible"
+                            android:id="@+id/pay4"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Miscellanous Fee"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/type6"
+                            android:textColor="@android:color/black"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/_5sdp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/balance6"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pay"
+                            android:visibility="visible"
+                            android:id="@+id/pay6"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:text="6"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="match_parent"
+                            android:text="P.T.A Fee"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/type7"
+                            android:textColor="@android:color/black"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/_5sdp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/balance7"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pay"
+                            android:visibility="visible"
+                            android:id="@+id/pay7"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="match_parent"
+                            android:text="Computer Fee"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/type5"
+                            android:textColor="@android:color/black"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/_5sdp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/balance5"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pay"
+                            android:visibility="visible"
+                            android:id="@+id/pay5"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:text="8"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Smart Board Fee"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/type8"
+                            android:textColor="@android:color/black"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/_5sdp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:id="@+id/balance8"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Pay"
+                            android:visibility="visible"
+                            android:id="@+id/pay8"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/holo_red_light"/>
+
+                <EditText
+                    android:id="@+id/payamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:background="@drawable/shapeemail1"
+                    android:hint="Enter installment amount to pay"
+                    android:inputType="numberDecimal"
+                    android:visibility="invisible"
+                    android:focusable="false"
+                    android:padding="15dp"
+                    android:shadowColor="@android:color/transparent"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <Button
+                    android:id="@+id/proceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_50sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/shapelogin1"
+                    android:padding="15dp"
+                    android:shadowColor="@android:color/transparent"
+                    android:text="proceed"
+                    android:visibility="invisible"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/show"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:visibility="invisible"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/response"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:visibility="invisible"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

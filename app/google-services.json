@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "139937042206",
+    "firebase_url": "https://iris-international-school.firebaseio.com",
+    "project_id": "iris-international-school",
+    "storage_bucket": "iris-international-school.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139937042206:android:e85b6cccaf6fbe6244c30f",
+        "android_client_info": {
+          "package_name": "com.school.irisnewschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139937042206-ahu6rt362arlv23iqqlq1252qt4huegt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0zQfsIkSHsG09J_Q58bPonQrzP2SzeF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139937042206-ahu6rt362arlv23iqqlq1252qt4huegt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

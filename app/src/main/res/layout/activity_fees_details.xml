@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FeesDetails"
+    android:id="@+id/id">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/spinner1"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/spinner2"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/spinner3"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/spinner4"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/spinner5"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/spinner6"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/spinner7"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/academic"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/discount"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/total"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Student profile"
+                android:textAllCaps="true"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/_1sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:background="@android:color/white"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Name"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:background="@android:color/holo_blue_dark"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:padding="@dimen/_2sdp"
+                            android:textColor="@android:color/white"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/holo_blue_dark"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:id="@+id/name"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:background="@android:color/holo_blue_dark">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:text="Standard"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"/>
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:textSize="16sp"
+                                android:gravity="center"
+                                android:textColor="@android:color/white"
+                                android:id="@+id/standard"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/_1sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="@android:color/holo_blue_dark"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:text="Division"
+                                android:textSize="18sp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:textSize="16sp"
+                                android:gravity="center"
+                                android:textColor="@android:color/white"
+                                android:id="@+id/div"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@android:color/white">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/_1sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="@android:color/holo_blue_dark"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Roll No"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <!--<Button-->
+                            <!--android:layout_width="3dp"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:background="@android:color/holo_green_dark"/>-->
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:gravity="center"
+                                android:textColor="@android:color/white"
+                                android:id="@+id/roll"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/_1sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="@android:color/holo_blue_dark"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:text="Std Code"
+                                android:textSize="18sp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:gravity="center"
+                                android:textColor="@android:color/white"
+                                android:id="@+id/code"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="YOUR FEE SUMMARY"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on below button's to see your fee deatils"
+                android:textSize="15sp"
+                android:id="@+id/blink"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:orientation="vertical"
+                    android:id="@+id/l1"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="paid fee details"
+                        android:textSize="12sp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@android:color/holo_green_dark"
+                        android:id="@+id/paidfee"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:orientation="vertical"
+                    android:id="@+id/l2"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:text="pending fee details"
+                        android:background="@android:color/holo_red_light"
+                        android:textSize="12sp"
+                        android:id="@+id/peending"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:orientation="vertical"
+                    android:id="@+id/l3"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="Other fee details"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:background="@android:color/holo_purple"
+                        android:id="@+id/additional"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/holo_green_dark">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/card1"
+                    android:layout_margin="@dimen/_3sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_3sdp">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="@dimen/_180sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Yearly Fees"
+                                android:textSize="20sp"
+                                android:id="@+id/year"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/holo_blue_dark"/>
+
+                            <Button
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="3dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@android:color/holo_blue_dark"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="3dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/holo_green_dark"/>
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/totalfee"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_55sdp"-->
+                <!--android:id="@+id/discountfee"-->
+                <!--android:layout_margin="@dimen/_3sdp">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:padding="@dimen/_3sdp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="@dimen/_180sdp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Concession Amount"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textSize="20sp"-->
+                <!--android:id="@+id/did"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@android:color/holo_blue_dark"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="3dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="@android:color/black"/>-->
+
+                <!--<TextView-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/_7sdp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:id="@+id/dis"-->
+                <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:id="@+id/card5"-->
+                <!--android:layout_marginLeft="@dimen/_3sdp"-->
+                <!--android:layout_marginBottom="@dimen/_3sdp"-->
+                <!--android:layout_marginRight="@dimen/_3sdp">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:padding="@dimen/_3sdp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="@dimen/_180sdp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Total Amount"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@android:color/holo_blue_dark"/>-->
+
+                <!--<Button-->
+                <!--android:layout_width="3dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="@android:color/holo_green_dark"/>-->
+
+                <!--<TextView-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/_7sdp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:id="@+id/minustotal"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textStyle="bold"/>-->
+                <!--</LinearLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/card2"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_3sdp">
+
+                        <TextView
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="wrap_content"
+                            android:text="Paid Fees"
+                            android:id="@+id/paid1"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/holo_blue_dark"/>
+
+                        <Button
+                            android:layout_width="3dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/holo_green_dark"/>
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:id="@+id/feespaid"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/card3"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_3sdp">
+
+                        <TextView
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="wrap_content"
+                            android:text="Pending Fees"
+                            android:textSize="20sp"
+                            android:id="@+id/pen"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/holo_blue_dark"/>
+
+                        <Button
+                            android:layout_width="3dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/holo_green_dark"/>
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/pending"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="15sp"
+                android:id="@+id/show"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textColor="@android:color/holo_red_light"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="15sp"
+                android:id="@+id/concession"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textColor="@android:color/holo_red_light"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

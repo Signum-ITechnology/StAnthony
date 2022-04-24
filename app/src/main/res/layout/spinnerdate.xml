@@ -1,0 +1,15 @@
+
+<TextView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textColor="@android:color/black"
+android:textSize="20sp"
+android:text="Present"
+android:layout_margin="@dimen/_2sdp"
+android:background="@android:color/white"
+android:textAlignment="center"
+android:padding="@dimen/_10sdp"
+android:textStyle="bold">
+
+</TextView>

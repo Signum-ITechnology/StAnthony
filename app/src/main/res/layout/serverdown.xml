@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Oops"-->
+        <!--android:layout_marginTop="@dimen/_20sdp"-->
+        <!--android:textSize="30sp"-->
+        <!--android:textStyle="bold|italic"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@android:color/holo_red_dark"-->
+        <!--android:padding="@dimen/_5sdp"/>-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:src="@drawable/oppsserverdown"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We Will Be Back In Short Time"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

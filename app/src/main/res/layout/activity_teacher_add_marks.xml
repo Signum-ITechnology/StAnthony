@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherAddMarks">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Points to Remember"
+            android:layout_margin="@dimen/_5sdp"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textColor="@android:color/holo_purple"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Enter All Marks And Then Press Submit Button If Not Then 0 Will Be Entered For Not Entered Marks."
+            android:paddingLeft="@dimen/_5sdp"
+            android:textSize="13sp"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="2. While Entering Marks If It Turns Red Then You Have Exceeded The Max Marks Kindly Correct It Imeediately Or Else Wrong Marks Will Be Entered."
+            android:textSize="13sp"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. If Student Is Absent In Exam Kindly Enter AB or ab."
+            android:paddingLeft="@dimen/_5sdp"
+            android:textSize="13sp"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Click on student name to update it."
+            android:paddingLeft="@dimen/_5sdp"
+            android:textSize="13sp"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:text="Code"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="center"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:text="Roll"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="center"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Student Name"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="center"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:id="@+id/h1"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:id="@+id/h2"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:id="@+id/h3"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:id="@+id/h4"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:id="@+id/h5"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:id="@+id/h6"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:id="@+id/h7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_purple"
+                        android:textAlignment="center"
+                        android:id="@+id/l1"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_purple"
+                        android:textAlignment="center"
+                        android:id="@+id/l2"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_purple"
+                        android:textAlignment="center"
+                        android:id="@+id/l3"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_purple"
+                        android:textAlignment="center"
+                        android:id="@+id/l4"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_purple"
+                        android:textAlignment="center"
+                        android:id="@+id/l5"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_purple"
+                        android:textAlignment="center"
+                        android:id="@+id/l6"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_purple"
+                        android:textAlignment="center"
+                        android:id="@+id/l7"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id0"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/id"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/id1"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/id2"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/id3"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/id4"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/id5"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/id6"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/id7"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/id8"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:shadowColor="@android:color/transparent"
+            android:paddingTop="2dp"
+            android:textStyle="bold"
+            android:id="@+id/btn"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:background="@drawable/shapelogin1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

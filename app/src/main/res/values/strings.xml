@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">St Anthony High School</string>
+    <string name="title_activity_home_page">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">St Anthony High School</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="a_vibrant_learning_environment_founded_in_1996">A Vibrant Learning Environment Founded in 1996</string>
+    <string name="title_activity_home_page2">Home</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_assignment_page">AssignmentPage</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

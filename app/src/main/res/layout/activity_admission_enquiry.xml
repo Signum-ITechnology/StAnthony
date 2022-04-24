@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdmissionEnquiry"
+    android:orientation="vertical"
+    android:id="@+id/id">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admission Enquiry Form"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:layout_margin="@dimen/_2sdp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:id="@+id/text1"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Student Name"
+                android:inputType="text"
+                android:focusable="false"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/student"
+                android:drawableTint="@android:color/black"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:id="@+id/text2"
+                    android:background="@drawable/shapeemail1"
+                    android:drawablePadding="10dp"
+                    android:hint="DOB"
+                    android:focusable="false"
+                    android:textStyle="bold"
+                    android:drawableTint="@android:color/black"
+                    android:drawableLeft="@drawable/addbirth"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textColorHighlight="@android:color/black"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:id="@+id/text4"
+                    android:background="@drawable/shapeemail1"
+                    android:drawablePadding="10dp"
+                    android:hint="Age"
+                    android:focusable="false"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textColorHighlight="@android:color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/shapeemail1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:id="@+id/text3"/>
+
+            </LinearLayout>
+
+            <!--<Spinner-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:padding="15dp"-->
+                <!--android:id="@+id/text4"-->
+                <!--android:background="@drawable/shapeemail1"-->
+                <!--android:drawablePadding="10dp"-->
+                <!--android:inputType="number"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textColorHint="@android:color/black"-->
+                <!--android:textColorHighlight="@android:color/black"/>-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:id="@+id/text5"
+                android:focusable="false"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Previous School (Enter Only If)"
+                android:inputType="text"
+                android:drawableTint="@android:color/black"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/addschool"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:id="@+id/text6"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Parent Name"
+                android:drawableTint="@android:color/black"
+                android:focusable="false"
+                android:textStyle="bold"
+                android:inputType="text"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:drawableLeft="@drawable/addparent"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:drawableTint="@android:color/black"
+                android:id="@+id/text7"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Contact No"
+                android:focusable="false"
+                android:maxLength="10"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/addcall"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:id="@+id/text8"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:drawableTint="@android:color/black"
+                android:hint="Email Id"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/addmail"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:drawableTint="@android:color/black"
+                android:id="@+id/text9"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Address"
+                android:focusable="false"
+                android:inputType="text"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/addaddress"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:drawableTint="@android:color/black"
+                android:id="@+id/text10"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:hint="Comment"
+                android:inputType="text"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/addcomment"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableTint="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/text11"
+                android:background="@drawable/shapeemail1"
+                android:drawablePadding="10dp"
+                android:hint="Reference"
+                android:inputType="text"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/addref"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorHighlight="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(e.g. website, internet search, word of mouth, etc.)"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Enquiry"
+                android:shadowColor="@android:color/transparent"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:id="@+id/login"
+                android:textSize="15sp"
+                android:enabled="false"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shapelogin1"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

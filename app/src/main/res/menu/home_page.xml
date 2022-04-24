@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/pta1"
+        android:title="Users" />
+    <item
+        android:id="@+id/acadamic"
+        android:icon="@drawable/changeaca"
+        android:title="Acadmic" />
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/newrefresh"
+        android:title="Refresh" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/newlogout"
+        android:title="Log Out" />
+</menu>
